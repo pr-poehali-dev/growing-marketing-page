@@ -8,8 +8,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-red-600 via-red-700 to-gray-900 text-white">
-        <div className="absolute inset-0 bg-gradient-to-r from-red-600/90 to-gray-900/90"></div>
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#008FCB] via-[#006BA6] to-[#A60000] text-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#008FCB]/90 to-[#A60000]/90"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
