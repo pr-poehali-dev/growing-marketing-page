@@ -8,8 +8,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-orange-500 via-orange-600 to-blue-600 text-white">
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-500/80 to-blue-600/80"></div>
+      <section className="relative overflow-hidden bg-gradient-to-br from-red-600 via-red-700 to-gray-900 text-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-red-600/90 to-gray-900/90"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -24,8 +24,16 @@ const Index = () => {
                 </h1>
                 
                 <p className="text-xl lg:text-2xl opacity-90 leading-relaxed">
-                  Лекция с практическими инструментами для немедленного применения
+                  Авторская методика Игоря Манна для достижения взрывного роста продаж за 30-90 дней
                 </p>
+                
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 space-y-3">
+                  <h3 className="text-lg font-semibold text-yellow-300">Что такое Growing маркетинг:</h3>
+                  <p className="text-base opacity-90">
+                    Система быстрого масштабирования бизнеса, основанная на 4 принципах: 
+                    фокус на результат, скорость внедрения, измеримость эффекта, минимум затрат.
+                  </p>
+                </div>
                 
                 <div className="flex flex-wrap gap-4 pt-4">
                   <div className="flex items-center gap-2">
@@ -44,7 +52,7 @@ const Index = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100 text-lg px-8 py-6">
+                <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 text-lg px-8 py-6">
                   <Icon name="Ticket" className="mr-2" size={20} />
                   Купить билет
                 </Button>
@@ -56,9 +64,9 @@ const Index = () => {
             </div>
             
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-yellow-400/20 to-pink-400/20 rounded-3xl transform rotate-6"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-yellow-400/20 to-red-400/20 rounded-3xl transform rotate-6"></div>
               <img 
-                src="/img/dff445bc-0ca1-45fb-a40d-b84448f67dd7.jpg"
+                src="/img/10094207-f73d-4854-ad63-d6c71d23fc6c.jpg"
                 alt="Игорь Манн"
                 className="relative rounded-3xl shadow-2xl w-full max-w-md mx-auto transform hover:scale-105 transition-transform duration-300"
               />
@@ -80,14 +88,56 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
               <CardHeader>
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="TrendingUp" className="text-white" size={24} />
                 </div>
-                <CardTitle className="text-xl">Быстрый рост продаж</CardTitle>
+                <CardTitle className="text-xl">Фокус на результат</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  5 техник для увеличения конверсии в 2-3 раза за первый месяц применения
+                  Growing-маркетинг нацелен на конкретные измеримые результаты уже в первые 30 дней
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardHeader>
+                <div className="w-12 h-12 bg-gradient-to-br from-gray-600 to-gray-700 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Zap" className="text-white" size={24} />
+                </div>
+                <CardTitle className="text-xl">Скорость внедрения</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-base">
+                  Быстрое тестирование и запуск маркетинговых активностей без длительной подготовки
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardHeader>
+                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="BarChart3" className="text-white" size={24} />
+                </div>
+                <CardTitle className="text-xl">Измеримость эффекта</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-base">
+                  Каждое действие имеет четкие KPI и метрики для оценки эффективности
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardHeader>
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="DollarSign" className="text-white" size={24} />
+                </div>
+                <CardTitle className="text-xl">Минимум затрат</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-base">
+                  Максимальная отдача при минимальных вложениях через точечные решения
                 </CardDescription>
               </CardContent>
             </Card>
@@ -97,53 +147,11 @@ const Index = () => {
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="Target" className="text-white" size={24} />
                 </div>
-                <CardTitle className="text-xl">Точное попадание</CardTitle>
+                <CardTitle className="text-xl">Точность попадания</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  Как найти свою целевую аудиторию и создать сообщения, которые продают
-                </CardDescription>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-              <CardHeader>
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="Zap" className="text-white" size={24} />
-                </div>
-                <CardTitle className="text-xl">Молниеносные результаты</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base">
-                  Инструменты для получения первых результатов в течение 48 часов
-                </CardDescription>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-              <CardHeader>
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="Brain" className="text-white" size={24} />
-                </div>
-                <CardTitle className="text-xl">Психология покупателя</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base">
-                  Триггеры и методы влияния, которые заставляют клиентов покупать
-                </CardDescription>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-              <CardHeader>
-                <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="Rocket" className="text-white" size={24} />
-                </div>
-                <CardTitle className="text-xl">Масштабирование</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base">
-                  Как превратить успешную кампанию в систему стабильного роста
+                  Работа с конкретными сегментами и персонализированные предложения
                 </CardDescription>
               </CardContent>
             </Card>
@@ -151,13 +159,13 @@ const Index = () => {
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
               <CardHeader>
                 <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="BarChart3" className="text-white" size={24} />
+                  <Icon name="Rocket" className="text-white" size={24} />
                 </div>
-                <CardTitle className="text-xl">Аналитика результатов</CardTitle>
+                <CardTitle className="text-xl">Масштабируемость</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  Метрики и KPI для отслеживания эффективности маркетинговых активностей
+                  Системы, которые работают и на малом, и на большом объеме продаж
                 </CardDescription>
               </CardContent>
             </Card>
@@ -179,6 +187,11 @@ const Index = () => {
                 </p>
                 
                 <p>
+                  Создатель методики <strong>Growing-маркетинга</strong> — системы быстрого роста 
+                  продаж, которая позволяет компаниям получать результат уже через 30-90 дней.
+                </p>
+                
+                <p>
                   За 20 лет карьеры помог тысячам компаний увеличить продажи 
                   и построить эффективные маркетинговые системы.
                 </p>
@@ -186,11 +199,11 @@ const Index = () => {
 
               <div className="grid grid-cols-2 gap-8 mt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-600 mb-2">15</div>
+                  <div className="text-3xl font-bold text-red-600 mb-2">15</div>
                   <div className="text-gray-600">Бестселлеров</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">1000+</div>
+                  <div className="text-3xl font-bold text-gray-600 mb-2">1000+</div>
                   <div className="text-gray-600">Компаний-клиентов</div>
                 </div>
                 <div className="text-center">
@@ -198,14 +211,14 @@ const Index = () => {
                   <div className="text-gray-600">Лет опыта</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-600 mb-2">500+</div>
-                  <div className="text-gray-600">Выступлений</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">30-90</div>
+                  <div className="text-gray-600">Дней до результата</div>
                 </div>
               </div>
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-orange-100 to-blue-100 rounded-3xl p-8">
+              <div className="bg-gradient-to-br from-red-50 to-gray-100 rounded-3xl p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Что получите на лекции:</h3>
                 
                 <div className="space-y-4">
@@ -213,21 +226,21 @@ const Index = () => {
                     <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1">
                       <Icon name="Check" className="text-white" size={14} />
                     </div>
-                    <span>Готовые шаблоны для запуска рекламных кампаний</span>
+                    <span>4 принципа Growing-маркетинга с примерами</span>
                   </div>
                   
                   <div className="flex items-start gap-3">
                     <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1">
                       <Icon name="Check" className="text-white" size={14} />
                     </div>
-                    <span>Чек-листы для анализа конкурентов</span>
+                    <span>Готовые инструменты для быстрого роста</span>
                   </div>
                   
                   <div className="flex items-start gap-3">
                     <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1">
                       <Icon name="Check" className="text-white" size={14} />
                     </div>
-                    <span>Рабочие техники повышения конверсии</span>
+                    <span>Методы измерения эффективности за 30 дней</span>
                   </div>
                   
                   <div className="flex items-start gap-3">
@@ -244,7 +257,7 @@ const Index = () => {
       </section>
 
       {/* Ticket Purchase Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+      <section className="py-20 bg-gradient-to-br from-gray-900 to-red-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-6">Купить билет</h2>
@@ -275,13 +288,13 @@ const Index = () => {
                   <Icon name="Check" className="text-green-400" size={20} />
                   <span>Сертификат участника</span>
                 </div>
-                <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white text-lg py-6 mt-6">
+                <Button className="w-full bg-red-600 hover:bg-red-700 text-white text-lg py-6 mt-6">
                   Выбрать билет
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-orange-500 to-orange-600 border-orange-400 text-white relative overflow-hidden">
+            <Card className="bg-gradient-to-br from-red-500 to-red-600 border-red-400 text-white relative overflow-hidden">
               <div className="absolute top-4 right-4">
                 <Badge className="bg-yellow-400 text-yellow-900">Популярный</Badge>
               </div>
@@ -309,7 +322,7 @@ const Index = () => {
                   <Icon name="Check" className="text-yellow-300" size={20} />
                   <span>Подписанная книга в подарок</span>
                 </div>
-                <Button className="w-full bg-white text-orange-600 hover:bg-gray-100 text-lg py-6 mt-6">
+                <Button className="w-full bg-white text-red-600 hover:bg-gray-100 text-lg py-6 mt-6">
                   Выбрать VIP
                 </Button>
               </CardContent>
